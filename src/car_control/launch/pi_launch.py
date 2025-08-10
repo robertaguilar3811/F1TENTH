@@ -20,14 +20,5 @@ def generate_launch_description():
             }],
             output='screen'
         ),
-        # Image viewer node
-        '''
-        Node(
-            package='car_control',
-            executable='image_viewer',
-            name='image_viewer',
-            output='screen',
-        ),
-   	'''
     ])
 
