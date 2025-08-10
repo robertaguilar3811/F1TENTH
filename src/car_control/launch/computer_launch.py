@@ -5,7 +5,7 @@ def generate_launch_description():
     return LaunchDescription([
         # Image viewer node
         Node(
-            package='car_perception',
+            package='car_control',
             executable='image_viewer',
             name='image_viewer',
             output='screen',
