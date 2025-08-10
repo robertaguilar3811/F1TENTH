@@ -21,6 +21,7 @@ setup(
     entry_points={
     'console_scripts': [
         'talker = car_control.talker:main',
+	'image_viewer = car_control.image_viewer:main',
     ],
 },
 
