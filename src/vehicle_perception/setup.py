@@ -10,6 +10,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', ['launch/computer_launch.py']),  # Add this line
+    	('share/' + package_name + '/launch', ['launch/raspberrypi_launch.py']),  # Add this line
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
     'console_scripts': [
-	'image_viewer = car_control.image_viewer:main',
+	'image_viewer = vehicle_perception.image_viewer:main',
     ],
     },
 )
