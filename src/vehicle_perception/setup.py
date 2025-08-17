@@ -12,6 +12,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/computer_launch.py']),  # Add this line
     	('share/' + package_name + '/launch', ['launch/raspberrypi_launch.py']),  # Add this line
+        ('share/' + package_name + '/launch', ['launch/rplidar_launch.py']),  # Add this line
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
