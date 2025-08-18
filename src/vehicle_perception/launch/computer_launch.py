@@ -5,11 +5,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Path to your RViz config file
-    rviz_config_file = os.path.join(
-        get_package_share_directory('rplidar_ros'),
-        'rviz',
-        'rplidar.rviz'  # or the name of your rviz config file
-    )
+    rviz_config_file = '/home/rj/Documents/F1TENTH/src/vehicle_perception/rviz/rplidar.rviz'
     return LaunchDescription([
         # Image viewer node
         Node(
